@@ -4,7 +4,7 @@ import api from "../assets/api.png";
 import cpp from "../assets/cpp.png";
 import css from "../assets/css.png";
 import figma from "../assets/figma.png";
-import flutter from "../assets/flutter.png";
+import tailwind from "../assets/tailwind.png";
 import git from "../assets/git.png";
 import graphql from "../assets/graphql.png";
 import html from "../assets/html.png";
@@ -23,9 +23,9 @@ import about02 from "../assets/about02.png";
 import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 
-import profile from "../assets/profile.png";
+import hero from "../assets/hero.png";
 import circle from "../assets/circle.svg";
-import logo from "../assets/logo.png";
+import logodami from "../assets/logodami.png";
 
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
@@ -42,7 +42,7 @@ export default {
   cpp,
   css,
   figma,
-  flutter,
+  tailwind,
   git,
   graphql,
   html,
@@ -59,9 +59,9 @@ export default {
   about02,
   about03,
   about04,
-  profile,
+  hero,
   circle,
-  logo,
+  logodami,
   adidas,
   amazon,
   asus,

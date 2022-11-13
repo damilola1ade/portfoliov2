@@ -16,6 +16,11 @@ export default {
                 name:'desc',
                 title:'Desc',
                 type:'string'
+            },
+            {
+                name:'location',
+                title:'Location',
+                type:'string'
             }
     ]
 }
