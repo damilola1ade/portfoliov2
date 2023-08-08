@@ -20,7 +20,7 @@ const About = () => {
     <>
       <h2 className="head-text">
         I believe <span>Strong Processes</span> <br />
-        yields <span>Strong Results</span>
+        yield <span>Strong Results</span>
       </h2>
 
       <div className="app__profiles">
