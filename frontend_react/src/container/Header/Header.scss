@@ -66,6 +66,7 @@
     border-radius: 15px;
     flex-direction: row;
     width: auto;
+    color: black;
 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
@@ -75,8 +76,11 @@
     margin-top: 3rem;
 
     p {
-      width: 100%;
-      text-align: right;
+      width: 300px;
+      text-align: left;
+      font-size: 15px;
+      color: black
+     
     }
   }
 

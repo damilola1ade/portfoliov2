@@ -28,15 +28,15 @@ const Header = () => (
           <span>👋</span>
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hi, I'm</p>
-            <h1 className="head-text">Dami</h1>
+            <h1 className="head-text">Damilola</h1>
           </div>
         </div>
 
         <div className="tag-cmp app__flex">
-        <p className="p-text">A passionate and dedicated front end engineer with a keen eye for creating stunning user interfaces and immersive web experiences. </p>
+        <p className="p-text">A passionate and full stack engineer with a keen eye for creating stunning user interfaces and immersive web experiences. </p>
         </div>
         <div className="tag-cmp app__flex">
-        <p className="p-text">With 2 and a half years experience in the industry, I have honed my skills in React, JavaScript, Redux toolkit and various libraries, including Chakra UI, Material UI and TailwindCSS, and state management tools.
+        <p className="p-text">With 3 years of experience in the industry, I have honed my skills in full stack development, particularly with React and TypeScript. I have a strong background in creating and optimizing user interfaces, ensuring that the user experience is seamless and engaging.
 
         </p>
         </div>

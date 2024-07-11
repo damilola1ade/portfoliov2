@@ -14,7 +14,7 @@ const SocialMedia = () => (
     </a>
   </div>
     <div>
-      <a href='https://www.twitter.com/7amilola/' target="blank">
+      <a href='https://www.twitter.com/azathothxy/' target="blank">
       <BsTwitter />
       </a>
     </div>
