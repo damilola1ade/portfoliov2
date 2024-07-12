@@ -13,6 +13,12 @@
   z-index: 2;
 }
 
+.desktop-button {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
 button {
   padding: 15px;
   border-radius: 20px;
