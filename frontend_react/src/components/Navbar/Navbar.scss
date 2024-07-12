@@ -1,6 +1,5 @@
 .app__navbar {
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,6 +11,15 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
+}
+
+button {
+  padding: 15px;
+  border-radius: 20px;
+  border: 0px;
+  background-color: #313bac;
+  color: white;
+  cursor: pointer;
 }
 
 .app__navbar-logo {

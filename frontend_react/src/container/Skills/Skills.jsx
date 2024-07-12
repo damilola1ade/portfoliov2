@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import ReactTooltip from "react-tooltip";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
@@ -67,14 +66,18 @@ const Skills = () => {
                       <p className="p-text">{work.company}</p>
                       <p className="p-text">{work.location}</p>
                     </motion.div>
-                    <ReactTooltip
-                      id={work.name}
-                      effect="solid"
-                      arrowColor="#fff"
-                      className="skills-tooltip"
-                    >
-                      {work.desc}
-                    </ReactTooltip>
+
+                    {work?.responsibilities?.map((responsibility, index) => (
+                      <motion.div
+                        whileInView={{ opacity: [0, 1] }}
+                        transition={{ duration: 0.5 }}
+                        key={index}
+                      >
+                        <ul>
+                          <li className="p-text" style={{ color: 'black'}}>{responsibility}</li>
+                        </ul>
+                      </motion.div>
+                    ))}
                   </>
                 ))}
               </motion.div>

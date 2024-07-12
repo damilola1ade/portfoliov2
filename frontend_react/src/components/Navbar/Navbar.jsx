@@ -22,6 +22,13 @@ const Navbar = () => {
         ))}
       </ul>
 
+      <a
+        href="/DamilolaResume.docx"
+        download="DamilolaResume.docx"
+      >
+        <button className="button">Download Resume</button>
+      </a>
+
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
