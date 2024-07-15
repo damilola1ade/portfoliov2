@@ -33,7 +33,7 @@ const Header = () => (
         </div>
 
         <div className="tag-cmp app__flex">
-        <p className="p-text">A passionate and full stack engineer with a keen eye for creating stunning user interfaces and immersive web experiences. </p>
+        <p className="p-text">A passionate full stack engineer with a keen eye for creating stunning user interfaces and immersive web experiences. </p>
         </div>
         <div className="tag-cmp app__flex">
         <p className="p-text">With 3 years of experience in the industry, I have honed my skills in full stack development, particularly with React and TypeScript. I have a strong background in creating and optimizing user interfaces, ensuring that the user experience is seamless and engaging.
