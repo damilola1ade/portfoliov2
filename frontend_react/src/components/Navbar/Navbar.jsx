@@ -45,7 +45,7 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <a href="/DamilolaResume.docx" download="DamilolaResume.docx">
+              <a href="/DamilolaResume.docx" download="DamilolaResume.pdf">
                 <button className="button">Download Resume</button>
               </a>
             </ul>
