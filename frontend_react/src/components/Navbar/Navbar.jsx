@@ -23,7 +23,7 @@ const Navbar = () => {
       </ul>
 
       <div className="desktop-button">
-        <a href="/DamilolaResume.docx" download="DamilolaResume.docx">
+        <a href="/DamilolaResume.pdf" download="DamilolaResume.pdf">
           <button className="button">Download Resume</button>
         </a>
       </div>

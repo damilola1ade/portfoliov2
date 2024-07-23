@@ -1,9 +1,5 @@
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
 
   // disable the default padding styles
   .app__wrapper {
@@ -16,10 +12,10 @@
 }
 
 .app__header {
-  flex: 1;
   width: 100%;
-  height: 100%;
   flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
 
   padding: 6rem 2rem 0rem;
 
@@ -28,7 +24,7 @@
   }
 
   @media screen and (max-width: 1200px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   @media screen and (max-width: 450px) {
@@ -37,7 +33,6 @@
 }
 
 .app__header-info {
-  flex: 0.65;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -45,27 +40,19 @@
   height: 100%;
 
   margin: 0 2rem;
-
-  @media screen and (max-width: 1200px) {
-    width: 100%;
-    margin-right: 0rem;
-  }
 }
 
 .app__header-badge {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   flex-direction: column;
 
   .badge-cmp,
   .tag-cmp {
+    width: 100%;
     padding: 1rem 2rem;
-    background: var(--white-color);
     border-radius: 15px;
     flex-direction: row;
-    width: auto;
     color: black;
 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -73,14 +60,18 @@
 
   .tag-cmp {
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 1rem;
 
     p {
-      width: 300px;
+      width: 400px;
       text-align: left;
       font-size: 15px;
-      color: black
-     
+      color: black;
+
+      @media screen and (max-width: 1200px) {
+        width: 300px;
+        font-size: 13px;
+      }
     }
   }
 
@@ -169,18 +160,17 @@
 }
 
 .app__header-img {
-  flex: 1;
-  height: 100%;
-
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  position: relative;
+  border-style: solid;
+  border-width: medium;
+  border-color: #d9dfe7;
+  border-radius: 20px;
 
   img {
-    width: 100%;
+    width: 350px;
     object-fit: contain;
     z-index: 1;
+    border-radius: 20px;
   }
 
   .overlay_circle {
@@ -195,5 +185,8 @@
 
   @media screen and (max-width: 1200px) {
     margin: 2rem 0;
+    img {
+      width: 200px;
+    }
   }
 }
