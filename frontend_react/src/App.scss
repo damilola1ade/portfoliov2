@@ -55,7 +55,7 @@
 
   p {
     text-transform: uppercase;
-    color: var(--black-color);
+    color: black;
   }
 }
 
@@ -63,11 +63,11 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black-color);
+  color: black;
   text-transform: capitalize;
 
   span {
-    color: var(--secondary-color);
+    color: black;
   }
 
   @media screen and (min-width: 2000px) {
@@ -82,7 +82,7 @@
 .p-text {
   font-size: 0.8rem;
   text-align: left;
-  color: var(--gray-color);
+  color: black;
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
@@ -93,7 +93,7 @@
 .bold-text {
   font-size: 1rem;
   font-weight: 800;
-  color: var(--black-color);
+  color: black;
   text-align: left;
 
   @media screen and (min-width: 2000px) {
@@ -130,12 +130,12 @@
     svg {
       width: 15px;
       height: 15px;
-      color: var(--gray-color);
+      color: black;
     }
 
     &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      background-color: black;
+      border-color: black;
 
       svg {
         color: var(--white-color);
@@ -174,7 +174,7 @@
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: black;
     }
 
     @media screen and (min-width: 2000px) {

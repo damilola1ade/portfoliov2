@@ -38,14 +38,14 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "about", "work", "skills", "contact"].map((item) => (
+              {["home", "skills & experiences", "my projects", "contact"].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
                   </a>
                 </li>
               ))}
-              <a href="/DamilolaResume.docx" download="DamilolaResume.pdf">
+              <a href="/DamilolaResume.pdf" download="DamilolaResume.pdf">
                 <button className="button">Download Resume</button>
               </a>
             </ul>

@@ -64,51 +64,24 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {filterWork.map((work, index) => (
-          <div className="app__work-item app__flex" key={index}>
-            <div className="app__work-img app__flex">
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
-            </div>
-
-            <div className="app__work-content app__flex">
-              <div
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                  fontSize: "14px",
-                  marginTop: "8px",
-                }}
-              >
-                <a href={work.projectLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
-                    className="app__flex"
-                  >
-                    Live link
-                  </motion.div>
-                </a>
-                <a href={work.codeLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
-                    className="app__flex"
-                  >
-                    Github link
-                  </motion.div>
-                </a>
-              </div>
-
-              <h4 className="bold-text">{work.title}</h4>
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginTop:'32px'
+            }}
+            key={index}
+          >
+            <div style={{display:'flex', flexDirection: 'column'}}>
+              <h2 style={{ color: "black" }}>{work.title}</h2>
               <p className="p-text" style={{ marginTop: 10 }}>
                 {work.description}
               </p>
 
               <div style={{ width: "100%" }}>
-                <p className="p-text" style={{ marginTop: 8, marginBottom: 6, fontWeight:'bold'  }}>
+                <p className="p-text" style={{ marginTop: 6, marginBottom: 6 }}>
                   Technologies used:
                 </p>
 
@@ -126,11 +99,15 @@ const Work = () => {
                   </motion.div>
                 ))}
               </div>
-
-              <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
-              </div>
             </div>
+
+            <motion.div
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 0.5, delayChildren: 0.5 }}
+                className="app__header-img"
+              >
+                <img src={urlFor(work.imgUrl)} alt={work.name} />
+              </motion.div>
           </div>
         ))}
       </motion.div>

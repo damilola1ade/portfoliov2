@@ -32,6 +32,12 @@ export default {
         hotspot: true,
       },
     },
+    {
+      name: "technologies",
+      title: "Technologies",
+      type: "array",
+      of: [{ type: "string" }],
+    },
 
     {
       name: "tags",
