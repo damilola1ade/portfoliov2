@@ -90,16 +90,18 @@ const Work = () => {
                     Live link
                   </motion.div>
                 </a>
-                <a href={work.codeLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
-                    className="app__flex"
-                  >
-                    Github link
-                  </motion.div>
-                </a>
+                {!work.codeLink ? null : (
+                  <a href={work.codeLink} target="_blank" rel="noreferrer">
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{ duration: 0.25 }}
+                      className="app__flex"
+                    >
+                      Github link
+                    </motion.div>
+                  </a>
+                )}
               </div>
 
               <h4 className="bold-text">{work.title}</h4>
@@ -108,7 +110,10 @@ const Work = () => {
               </p>
 
               <div style={{ width: "100%" }}>
-                <p className="p-text" style={{ marginTop: 8, marginBottom: 6, fontWeight:'bold'  }}>
+                <p
+                  className="p-text"
+                  style={{ marginTop: 8, marginBottom: 6, fontWeight: "bold" }}
+                >
                   Technologies used:
                 </p>
 
