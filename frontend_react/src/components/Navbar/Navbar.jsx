@@ -23,8 +23,12 @@ const Navbar = () => {
       </ul>
 
       <div className="desktop-button">
-        <a href="/DamilolaResume.pdf" download="DamilolaResume.pdf">
-          <button className="button">Download Resume</button>
+        <a
+          href="https://drive.google.com/file/d/1pmBuSTQDQhBZxYGJmae1D4fkt-N0tAfZ/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="button">View resume</button>
         </a>
       </div>
 
@@ -38,15 +42,21 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "skills & experiences", "my projects", "contact"].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </a>
-                </li>
-              ))}
-              <a href="/DamilolaResume.pdf" download="DamilolaResume.pdf">
-                <button className="button">Download Resume</button>
+              {["home", "skills & experiences", "my projects", "contact"].map(
+                (item) => (
+                  <li key={item}>
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                      {item}
+                    </a>
+                  </li>
+                )
+              )}
+              <a
+                href="https://drive.google.com/file/d/1pmBuSTQDQhBZxYGJmae1D4fkt-N0tAfZ/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="button">View Resume</button>
               </a>
             </ul>
           </motion.div>
