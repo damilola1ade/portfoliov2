@@ -14,7 +14,10 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
-      setExperiences(data);
+      const sortedData = data.sort(
+        (a, b) => new Date(b._createdAt) - new Date(a._createdAt)
+      );
+      setExperiences(sortedData);
     });
 
     client.fetch(skillsQuery).then((data) => {

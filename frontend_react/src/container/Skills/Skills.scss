@@ -94,8 +94,6 @@
 }
 
 .app__skills-exp-item {
-  width: 100%;
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
@@ -112,6 +110,7 @@
     align-items: flex-start;
     margin-bottom: 1rem;
     cursor: pointer;
+    width: 300px;
 
     h4 {
       font-weight: 500;
@@ -127,6 +126,7 @@
 
 .app__skills-exp-year {
   margin-right: 3rem;
+  width: 120px;
 
   p {
     font-weight: 800;
