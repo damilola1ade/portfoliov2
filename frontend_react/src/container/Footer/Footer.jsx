@@ -15,12 +15,6 @@ const Footer = () => {
             damiiyi@gmail.com
           </a>
         </div>
-        <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
-          <a href="tel:+2348138486922" className="p-text">
-            +234 813 848 6922
-          </a>
-        </div>
       </div>
     </>
   );
