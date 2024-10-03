@@ -14,7 +14,7 @@ const Navbar = () => {
         <img src={images.logodami} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "skills", "contact"].map((item) => (
+        {["home", "skills & experiences", "projects", 'blog', "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -42,15 +42,13 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "skills & experiences", "my projects", "contact"].map(
-                (item) => (
-                  <li key={item}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}>
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {["home", "skills & experiences", "projects", 'blog', "contact"].map((item) => (
+                <li key={item}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
+                </li>
+              ))}
               <a
                 href="https://drive.google.com/file/d/1pmBuSTQDQhBZxYGJmae1D4fkt-N0tAfZ/view?usp=sharing"
                 target="_blank"
