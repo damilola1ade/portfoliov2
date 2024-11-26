@@ -5,59 +5,53 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
 import "./Blogs.scss";
 
-const Skills = () => {
+const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
     const blogsQuery = '*[_type == "blogs"]';
 
     client.fetch(blogsQuery).then((data) => {
-      setBlogs(data);
+      const sortedData = data.sort(
+        (a, b) => new Date(b._createdAt) - new Date(a._createdAt)
+      );
+      setBlogs(sortedData);
     });
   }, []);
 
   return (
-    <>
-      <h2 className="head-text">Technical Writeups</h2>
+    <div style={{display: 'flex', flexDirection: 'column'}}>
+      <h2 className="head-text">Blog posts</h2>
 
       <div className="app__skills-container">
-        <motion.div>
-          {blogs.map((skill) => (
+        {blogs.map((blog) => (
+          <a href={blog.link} target="_blank" rel="noreferrer">
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
-              key={skill.name}
+              key={blog.name}
+              className="blog-card"
             >
-              <ul>
-                <li
-                  className="p-text"
-                  style={{
-                    backgroundColor: "#edf2f8",
-                    padding: "10px",
-                    borderRadius: "10px",
-                    marginBottom: '10px'
-                  }}
-                >
-                  <a
-                    href={skill.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{ fontSize: "20px" }}
-                  >
-                    {skill.title}
-                  </a>
-                </li>
-              </ul>
+              <img
+                src="/developer.jpg"
+                alt={blog.title}
+                className="blog-card__image"
+              />
+              <div className="blog-card__content">
+                <h3 className="blog-card__title">{blog.title}</h3>
+
+                <p className="blog-card__description">{blog.description}</p>
+              </div>
             </motion.div>
-          ))}
-        </motion.div>
+          </a>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
 export default AppWrap(
-  MotionWrap(Skills, "app__skills"),
+  MotionWrap(Blogs, "app__skills"),
   "blog",
   "app__whitebg"
 );

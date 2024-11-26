@@ -14,7 +14,7 @@ const Navbar = () => {
         <img src={images.logodami} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "skills & experiences", "projects", 'blog', "contact"].map((item) => (
+        {["blog", "skills", "projects", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -24,7 +24,7 @@ const Navbar = () => {
 
       <div className="desktop-button">
         <a
-          href="https://drive.google.com/file/d/1pmBuSTQDQhBZxYGJmae1D4fkt-N0tAfZ/view?usp=sharing"
+          href="https://drive.google.com/file/d/16fkQsedPAjVLci7h5MSRsIAcsPx2cRVA/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
@@ -42,7 +42,7 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "skills & experiences", "projects", 'blog', "contact"].map((item) => (
+              {["blog", "skills", "projects", "contact"].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </li>
               ))}
               <a
-                href="https://drive.google.com/file/d/1pmBuSTQDQhBZxYGJmae1D4fkt-N0tAfZ/view?usp=sharing"
+                href="https://drive.google.com/file/d/16fkQsedPAjVLci7h5MSRsIAcsPx2cRVA/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >

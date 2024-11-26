@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { AppWrap } from "../../wrapper";
-import { images } from "../../constants";
 import "./Header.scss";
 
 const Header = () => (
@@ -19,7 +18,7 @@ const Header = () => (
             <p className="p-text" style={{ color: "black" }}>
               Hi, I'm
             </p>
-            <h1 className="head-text">Damilola</h1>
+            <h1 className="head-text">Dami</h1>
           </div>
         </div>
 
@@ -31,7 +30,7 @@ const Header = () => (
         </div>
         <div className="tag-cmp app__flex">
           <p className="p-text">
-            With 4 years of experience in the industry, I have honed my skills
+            With 5 years experience in the industry, I have honed my skills
             in full stack development, particularly with React, TypeScript, Node.js and PostgreSQL. I have a strong background in creating and optimizing user
             interfaces, ensuring that the user experience is seamless and
             engaging.
@@ -45,7 +44,8 @@ const Header = () => (
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className="app__header-img"
     >
-      <img src={images.hero} alt="profile_bg" />
+      {/* <img src={images.hero} alt="profile_bg" /> */}
+      <img src='/photo.jpg' alt="profile_bg" />
     </motion.div>
   </div>
 );
