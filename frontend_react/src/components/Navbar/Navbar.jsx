@@ -24,7 +24,7 @@ const Navbar = () => {
 
       <div className="desktop-button">
         <a
-          href="https://drive.google.com/file/d/16fkQsedPAjVLci7h5MSRsIAcsPx2cRVA/view?usp=sharing"
+          href="https://drive.google.com/file/d/1cxsBqzNlACC7W7ISii-w_uilQ3NBZK6h/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </li>
               ))}
               <a
-                href="https://drive.google.com/file/d/16fkQsedPAjVLci7h5MSRsIAcsPx2cRVA/view?usp=sharing"
+                href="https://drive.google.com/file/d/1cxsBqzNlACC7W7ISii-w_uilQ3NBZK6h/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
